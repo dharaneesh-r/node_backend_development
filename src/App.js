@@ -7,7 +7,11 @@ function App() {
   console.log(slugify('Fresh Avocados',{lower : true}))
   console.log(slugify)
   return (
-    <div>App</div>
+    <>
+      <div>App</div>
+      <div>Welcome</div>
+    </>
+    
   )
 }
 
