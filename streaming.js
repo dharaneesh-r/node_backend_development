@@ -1,7 +1,7 @@
 const {readFile, createReadStream} = require('fs')
 const http = require('http').createServer()
 
-//one type of solution 1 => fs & http modules
+//solution 1 => fs & http modules
 
 http.on('request', (req, res) => {
     //filesystem(fs) modules
