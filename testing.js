@@ -58,3 +58,14 @@ console.log('hello from the top-level code')
 // serverData.listen(3000, () =>{
 //     console.log('serverData is getting started !!!')
 // })
+
+
+///////////////////////////////////////////
+//testing to introduction
+
+const randomNumber =  () => {
+    console.log(Math.trunc(Math.random()*100) +1)
+}
+randomNumber()
+
+module.exports = randomNumber
