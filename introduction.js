@@ -1,14 +1,22 @@
+const http = require('http')
 
-const data = require('./postcontroller.js')
+// console.log(http)
 
-console.log(data)
+const server = http.createServer((req, res) => {
+    // res.setHeader('content-type', 'text/html')
+    // res.statusCode = 200
+    // res.write('<h1>hello world</h1>')
+    res.writeHead(200,{'content-type' : 'text/html'})
+    res.write('<h1>This is Investoproweal.com</h1>');
 
-const dataset = require('./testing') //exporting the data from one file to another file
-console.log(dataset)
+    console.log(req.url) //checking that what are the urls are used in website
+    console.log(req.method) //to check what http method is used in website
+    // res.writeHead(200, {'content-type' : 'application/json'})
+    // res.write(JSON.stringify({candidate : 'DHARANEESH'}))
+    res.end()
+})
 
-console.log('introduction about node.js')
-console.log('--------------------------')
-
-
-
- 
+const PORT = process.env.PORT
+server.listen(PORT, '127.0.0.1', () => {
+    console.log(`listening server on port ${PORT}`)
+})
