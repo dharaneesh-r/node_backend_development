@@ -26,7 +26,7 @@ newEvent.on('investoproweal', networth => {
     console.log(`this is my networth --> $${networth} in my age of 25`)
 })
 
-newEvent.emit('investoproweal',10000000000)
+newEvent.emit('investoproweal',10000000000) //10000000000 refers to networth
 
 //////////////////////////////////////////////////////////////////
 
