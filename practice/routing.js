@@ -14,10 +14,10 @@ const user = [
 
 //logger middleware
 
-const logger = (req, res, next) => {
-    console.log(`${req.method} ${req.url}`)
-    next()
-}
+// const logger = (req, res, next) => {
+//     console.log(`${req.method} ${req.url}`)
+//     next()
+// }
 
 const server = http.createServer((req, res) => {
     try {
